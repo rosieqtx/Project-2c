@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="notes_style.css">
+        <title>Class Notes</title>
+    </head>
+    <body><h1>Lesson 1</h1>
+	<div class="concept_title">What's a web page?</div>
+
+		<div class="concept_description">A web page is a text document. The language used is primarily HTML. </div>
+<div class="concept_title">How Coding Works</div>
+
+	<div>Coding is talking to the computer in a language the computer understands. It needs to be exactly right because computers are stupid. </div>
+	
+
+
+
+<div class="concept_title">Basic HTML Vocabulary</div>
+
+<ul><li>Tag: An HTML tag is what the computer takes direction from. Most tags have an opening tag. Some tags are called "void" tags and do not require a closing tag.</li>
+
+<li>Element: An HTML element is everything within opening and closing tags.</li>
+
+<li> Attribute: This is a property of an HTML element, put inside a tag.</li></ul>
+
+<h1>Lesson 2</h1>
+<div class="concept_description">Everything is a tree.</div>
+<div class="concept_description">DOM stands for Document Object Model</div>
+<div class="concept_description">How to break a design into boxes - because everything on the web is a box</div>
+
+<div class="concept_title">Box Sizing</div>
+
+<div class="concept_description">HTML elements are boxes and each box has 4 components. These are the box, padding, border, and margin.</div>
+
+<div class="concept_description">It is hard to size boxes acurately. </div>
+
+  <ul><li>Set sizes in terms of percents rather than pixels.</li>
+   <li>   Set the box-sizing attribute to border-box for every element.</li></ul> 
+
+<div class="concept_title">Box Positioning (Notes directly taken from class slide.)</div>
+
+   <div class="demo"><div class="boxes"> Divs are block elements (as opposed to inline), so by default they take up the entire width of a page.</div>
+   <div class="boxes"> Adding the rule display: flex; to the appropriate CSS will override this behavior and let divs appear next to each other.</div></div>
+    
+<div class="concept_title">Structure</div>
+<div class="concept_description">HTML and CSS follow a logical structure, where each element has attributes and each subelement either has its own attributes or inherits the attributes of the element above it. This can be diagrammed in a tree shape.</div>
+<div class="concept_description"><div class="concept_title">Avoiding repetition</div>
+<div class="concept_description">One key element of programming is avoiding repetition. In this document, one way I avoided repetition by using CSS to style the div class="concept_title" tag rather than using the b tag and styling it everytime I wanted a subheading. CSS classes are another great way to avoid repetition.</div>
+<div class="concept_title"> How to write a program:</div>
+break problems into smaller pieces
+create steps
+
+<h1>Definitions</h1>
+
+<div class="concept_title">computer</div>
+<div class="concept_description">can’t do anything w/o a program</br>
+a universal machine that can do any computation</div>
+<div class="concept_title">program</div>
+<div class="concept_description">precise sequence of steps</br>
+tells the computer what steps to take</div>
+<div class="concept_title">interpreter</div>
+<div class="concept_description">translates program into something computer can understand</div>
+<h1>Python</h1>
+<div class="concept_description">We learned the command “print” which can do mathematical calculations. It is important to follow the correct syntax. The syntax is like a grammar. The grammar rules for using “print” to do mathematical calculations is something like:</br>
+Expression  ->Expression Operator Expression</br> 
+Expression -> Number </br>
+Operator -> + </br>
+Operator  -> * </br>
+Number ->  0, 1, ... </div>
+<div class="concept_title">Why not use natural language?</div>
+<div class="concept_description">Ambiguity & Verbosity</div>
+<div class="concept_title">Variables</div>
+<div class="concept_description">Assigning variables clarifies code and prevents repetition.</div>
+<div class="concept_title">Assignment statement:</div>
+<div class="concept_description">Name = Expression. The equals sign means “assignment” rather than “equals”.
+Variables can vary throughout the program. You can reassign a variable at any time. You can use the variable on both sides of an assignment: days=days-1 is valid. </div>
+<div class="concept_title">Strings</div>
+<div class="concept_description"> A sequence of characters. Strings are contained in single quotes or double quotes. They can be concatenated with +.
+</div>
+<div class="concept_title">Indexing strings:</div> 
+<div class="concept_description">The first postion is position 0. the syntax is &lt;string&gt; [&lt;expression&gt;]</br>
+Selecting sub-sequences from strings: &lt;string&gt; [&lt;expression&gt;:&lt;expression&gt;]. </div>
+<div class="concept_title">Find: </div>
+<div class="concept_description">Find is a method - a built in procedure in Python.</br>
+	&lt;string&gt;.find(&lt;string&gt;) outputs first position in search string where target string appears. If it is not found it returns -1. </br>
+We can add a second parameter of a number, telling Python where in the string to look. Here is an example from the class:</br>
+	<blockquote>example = &quot;Wow! Python is great! Don't you think?&quot;</br>
+	first = example.find('!')</br>
+	second = example.find('!', first + 1)</br>
+	new_string = example[:first] + example[first+1:second] + example[second+1:]</br>
+	print new_string # oops, I should probably replace the !s with periods</br>
+	new_string = example[:first] +'.'+ example[first+1:second] +'.'+ example[second+1:]</br>
+	print new_string</br></blockquote>
+
+Triple quotes can be used for a multi-line string.
+</div>
+<div class="concept_title">Functions/Procedures</div>
+
+<div class="concept_description">what a function is - a function is a procedure that makes the computer do something</div>
+<div class="'concept_title">how to make a function</div>
+<div class="concept_description"><blockquote>def &lt;procedure&gt; (&lt;input&gt;, &lt;input&gt;, &hellip;):
+	<blockquote>return (&lt;value&gt;,&lt;value&gt;,...)</blockquote></blockquote></div>
+<div class="concept_title">How to call and print a function</div>
+<div class="concept_description">print function name (parameters)</div>
+<div class="concept_title">WHILE</div>
+<div class="concept_description">A while loop repeatedly executes a statement as long as a given condition is true</div>
+<div class="concept_title">IF</div>
+<div class="concept_description">If the condition is true, executes the block. Otherwise, it goes on to the next thing. Or the next ELSE.</div>
+<div class="concept_title">ELSE</div>
+<div class="concept_description">Else is implied after an IF block, but there could be more than one ELSE, in which case you'd want to use this.</div>
+<div class="concept_title">== (equals)</div>
+<div class="concept_description">A single equals sign means "is assigned to". A double equals signe means "equals".</div>
+<div class="concept_title">USing OR</div>
+<div class="concept_description">If the first expression evaluates to True, the second expression is not evaluated.
+If the first expression evaluates to False, then the value of the construct is the value of the second expression.</div>
+<div class="concept_title">Lists</div>
+<div class="concept_description">Lists vs Strings: A string is a sequence of characters while a list can be a sequence of anything (including other lists)</div>
+<div class="concept_title">Mutating lists:</div>
+<div class="concept_description">Three ways to seem to alter a list (one doesn't actually alter it).
+	<blockquote>p=[‘y’,’a’,’b’,’b’,’a’,’!’]
+	p[0]=’h’ will change the value y to h.</blockquote>
+Append</br>
+Adds a new element to the end of a list.</br>
+	<blockquote>stooges=[‘moe’, ‘larry’, ‘curly’]
+	stooges.append(‘shemp’)</blockquote>
+Concatenate (using +)</br>
+Does not actually alter the list, just the output for one time.</div>
+
+<div class="concept_title">LEN</div>
+<div class="concept_description">counts the number of elements in a list or the number of characters in a string.
+	<blockquote>len(stooges)
+	result 4 </blockquote></div>
+<div class="concept_title">FOR loops</div>
+	<div class="concept_description"><blockquote>for &lt;name&gt; in &lt;list&gt;:
+	<blockquote>&lt;block&gt;</blockquote></blockquote>
+example
+ 
+	<blockquote>mylist =[1,2,[3,4]]</br>
+
+	for e in mylist:
+	<blockquote>print e</blockquote></blockquote></div>
+
+<div class="concept_title">INDEX</div>
+<div class="concept_description">looks for a value in a list. Returns its location or an error if the item is not found.
+	<blockquote>&lt;list&gt;.index(&lt;value&gt;)</blockquote></div>
+<div class="concept_title">IN</div>
+<div class="concept_description">Looks for a value in a list, returns True or False.
+	<blockquote>&lt;value&gt; in &lt;list&gt;</blockquote></div>
+<div class="concept_title">NOT IN </div>
+<div class="concept_description">also works</div>
+</body>
+</html>
+

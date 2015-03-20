@@ -1,0 +1,24 @@
+body {font-family: verdana; font-size: 12px;
+	background-color: rgb(225, 225, 242);
+
+
+}
+
+h1 {background-color: green;
+	color: white;
+	border: 2px black solid;
+	border-radius: 10px;
+	padding: 5px;
+}
+.concept_title {font-size: larger; font-weight: bold; line-height: 30px;}
+.concept_description {}
+
+
+.demo {display: -webkit-flex;
+    display: flex;
+}
+
+    .boxes { width: 50%;
+    	padding: 5px;
+    border: 1px blue solid;
+}
